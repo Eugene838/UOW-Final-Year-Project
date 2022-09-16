@@ -1,0 +1,47 @@
+{
+    "autoload": {
+        "psr-0": {
+            "Mail": "./",
+            "classmap": [
+                "./"
+            ]
+
+        },
+        "require": {
+            "php": ">=7.0.0",
+            "ext-dom": "*",
+            "ext-mbstring": "*",
+            "phenx/php-font-lib": "0.5.*",
+            "phenx/php-svg-lib": "0.3.*",
+            "monolog/monolog": "2.0.*",
+            "phpmailer/phpmailer": "^6.5",
+            "ext-pcre": "*",
+            "ext-xml": "*",
+            "pear/archive_tar": "*",
+            "pear/structures_graph": "*",
+            "pear/console_getopt": "*",
+            "pear/xml_util": "*"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8|^5.5|^6.5",
+            "squizlabs/php_codesniffer": "2.*"
+
+        },
+        "suggest": {
+            "ext-gd": "Needed to process images",
+            "ext-imagick": "Improves image processing performance",
+            "ext-gmagick": "Improves image processing performance",
+            "pear/pear_frontend_gtk": "For GTK support",
+            "pear/pear_frontend_web": "For Web support"
+        },
+        "extra": {
+            "branch-alias": {
+                "dev-develop": "0.7-dev"
+            }
+        },
+        "replace": {
+            "pear/pear-core-minimal": "*"
+        }
+
+    }
+}
